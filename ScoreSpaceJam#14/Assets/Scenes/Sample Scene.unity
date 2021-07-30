@@ -152,11 +152,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 309570340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8818c99cbae8a743862d5bb6667e429, type: 3}
+  m_Script: {fileID: 11500000, guid: f45ef822e68f18d4c9087ea905925f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 5
-  JumpForce: 7
+  rb: {fileID: 309570345}
+  horizontalAcceleration: 1
+  horizontalDampingStop: 0.5
+  horizontalDampingTurn: 0.5
+  horizontalDampingBasic: 0.5
 --- !u!212 &309570342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -255,7 +258,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 068e2c5b6f4465444a2ad541998b0c46, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -306,7 +309,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7636656, y: 1}
+    m_SensorSize: {x: 1.7908497, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
