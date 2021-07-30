@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontalVelocity, rb.velocity.y);
         if (rb.velocity.x > 0)
-            transform.Rotate(Vector3.forward * horizontalVelocity * -0.1f);
+            transform.Rotate(Vector3.forward * horizontalVelocity * -0.4f);
         else if (rb.velocity.x < 0)
-            transform.Rotate(Vector3.back * horizontalVelocity * 0.1f);
+            transform.Rotate(Vector3.back * horizontalVelocity * 0.4f);
     }
 }
