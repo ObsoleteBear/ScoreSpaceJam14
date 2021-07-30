@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 309570341}
   - component: {fileID: 309570345}
   - component: {fileID: 309570344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 413184367}
   - component: {fileID: 413184366}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Grond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
