@@ -4,29 +4,17 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float Speed = 5f;
-    public int food;
-    // Start is called before the first frame update
-    void Start()
+    public float MovementSpeed;
+    private void Start()
     {
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+    private void Update()
     {
-        if(collision.tag == "Collectable")
-        {
-            Destroy(collision.gameObject);
-            food += 1;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Vector2 Userinput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-        transform.Translate(Userinput * Speed * Time.deltaTime);
+        var movement = Input.GetAxis("Horizontal");
+        transform.position += new Vector3(movement,0,0) * Time.deltaTime * MovementSpeed;
     }
 }
 
