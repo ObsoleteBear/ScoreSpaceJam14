@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private void AccelerationDamping(float damping)
     {
         horizontalVelocity *= Mathf.Pow(1f - damping, Time.deltaTime * 10);
+       
     }
 
     public void Update()
