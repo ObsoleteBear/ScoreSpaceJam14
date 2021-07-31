@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   private Rigidbody2D rb;
+   private void Awake() {
+       rb = GetComponent<Rigidbody2D>();
+   }
+   private void Update() {
+       rb.AddForce(new Vector2 (3f, 0f) * Time.deltaTime);
+   }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
