@@ -23,8 +23,6 @@ public class CubeMovement : MonoBehaviour
         if(Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"))) 
         {
           isGrounded = true;
-
-        
         }
         else 
         {
